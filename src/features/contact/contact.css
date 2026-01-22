@@ -1,0 +1,61 @@
+.contact-container {
+    .contact-send-a-message {
+        .input-container {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: 600;
+                margin: 20px 0 10px 0;
+            }
+
+            .contact-input {
+                padding: 10px;
+                font-size: 16px;
+                outline: none;
+                border: 1px solid var(--color-secondary);
+                border-radius: 5px;
+                resize: none;
+                color: var(--color-text);
+            }
+            
+            textarea.contact-input {
+                height: 100px;
+            }
+
+            &.button-container {
+                .contact-input {
+                    margin-top: 20px;
+                    background-color: var(--color-primary);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    transition: var(--animation-main);
+
+                    &:hover {
+                        box-shadow: var(--box-shadow-main);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contact-blurb {
+            text-align: center;
+        }
+
+        
+        .contact-send-a-message {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px;
+        }
+    }
+}
