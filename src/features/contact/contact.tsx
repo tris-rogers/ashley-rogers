@@ -6,9 +6,25 @@ const Contact = () => {
             <h1 className="section-element main-title section-title">
                 Get In Touch
             </h1>
-            <p className="section-element contact-blurb">
-                Ready to take the first step? Reach out to schedule your initial consultaion.
-            </p>
+            <div className="section-element contact-blurb" style={{maxWidth: 500, textAlign: 'left'}}>
+                <p>
+                    If you are considering counselling and would like to find out more, you are welcome to contact me.
+                    Reaching out does not commit you to starting therapy. It is simply an opportunity to ask questions or
+                    arrange an initial session.
+                </p>
+                <p>You can contact me by:</p>
+                <ul>
+                    <li>Email</li>
+                    <li>Phone</li>
+                    <li>Contact Form Below</li>
+                </ul>
+
+                <br />
+                <h2>Pricing</h2>
+                <p>£45 per hour session.</p>
+                <p>Please get in touch if this feels prohibitive as I have some reduced rate spaces.</p>
+                <p>I offer a free 30min appointment to have an initial discussion to see if we are the right fit to work effectively together.</p>
+            </div>
             <div className="bubble-container contact-send-a-message section-element">
                 <div className="input-container">
                     <label>Name</label>

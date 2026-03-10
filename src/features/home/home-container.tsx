@@ -1,4 +1,5 @@
 import {CTAPrimary, CTASecondary} from "../../components/buttons/cta-buttons";
+import portrait from "../../assets/images/professional-portrait.jpg";
 
 import Home from "./home";
 
@@ -13,7 +14,7 @@ const HomeContainer = () => {
     return (
         <Home
             buttons={buttons}
-            imageUrl="\src\assets\images\professional-portrait.jpg"
+            imageUrl={portrait}
         />
     );
 }

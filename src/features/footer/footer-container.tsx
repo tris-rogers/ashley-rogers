@@ -6,7 +6,8 @@ const FooterContainer = () => {
     const yearMessage = startYear === currentYear ? `${startYear}` : `${startYear} - ${currentYear}`;
     const info = {
         copyrightMessage: `© ${yearMessage} Ashley Rogers. All rights reserved.`,
-        developerMessage: `Website designed and built by TR Software Solutions LTD`,
+        developerMessage: `Website designed and built by`,
+        developerCompany: 'TR Software Solutions LTD',
         links: [
             {
                 column: 

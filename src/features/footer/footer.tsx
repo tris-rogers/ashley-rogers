@@ -16,6 +16,7 @@ interface FooterProps {
   info: {
     copyrightMessage: string;
     developerMessage: string;
+    developerCompany: string;
     links: FooterColumn[];
   };
 }
@@ -52,7 +53,9 @@ const Footer = ({info}: FooterProps) => {
             </div>
 
             <div className="copyright-message">{info.copyrightMessage}</div>
-            <div className="developer-message">{info.developerMessage}</div>
+            <div className="developer-message">
+                {info.developerMessage} <span><u>{info.developerCompany}</u></span>
+            </div>
         </div>
     );
 }
