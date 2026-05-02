@@ -2,7 +2,7 @@ import "./footer.css";
 
 interface FooterLink {
   name: string;
-  url?: string;
+  onClick?: () => void;
   path?: string;
   style?: string;
 }
@@ -44,7 +44,12 @@ const Footer = ({info}: FooterProps) => {
                         {
                             info.links[0].links.map((link, index) => (
                                 <li key={index}>
-                                    <a href={link.url}>{link.name}</a>
+                                    <div
+                                        onClick={link.onClick}
+                                        style={{cursor: "pointer", color: "blue", textDecoration: "underline"}}
+                                    >
+                                        {link.name}
+                                    </div>
                                 </li>
                             ))
                         }

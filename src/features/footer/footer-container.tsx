@@ -1,6 +1,10 @@
+import { useState } from "react";
+
 import Footer from "./footer";
+import PrivacyPolicy from "../privacy-policy/privacy-policy";
 
 const FooterContainer = () => {
+    const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
     const startYear = 2026;
     const currentYear = new Date().getFullYear();
     const yearMessage = startYear === currentYear ? `${startYear}` : `${startYear} - ${currentYear}`;
@@ -13,8 +17,8 @@ const FooterContainer = () => {
                 column: 
                 "Legal", 
                 links: [
-                    { name: 'Privacy Policy', url: '/privacy-policy' },
-                    { name: 'Terms of Service', url: '/terms-of-service' }
+                    { name: 'Privacy Policy', onClick: ()=> setShowPrivacyPolicy(true)},
+                    // { name: 'Terms of Service', url: '/terms-of-service' }
                 ]
             },
             {
@@ -22,7 +26,7 @@ const FooterContainer = () => {
                 links: [
                     { name: 'Home', path: '#home' },
                     { name: 'About', path: '#about' },
-                    { name: 'Services', path: '#services' },
+                    // { name: 'Services', path: '#services' },
                     { name: 'Pricing', path: '#pricing' },
                     { name: 'Contact', path: '#contact', style: "cta" }
                 ]
@@ -30,7 +34,10 @@ const FooterContainer = () => {
         ],
     };
     return (
-        <Footer info={info} />
+        <>
+            {showPrivacyPolicy && <PrivacyPolicy close={()=>setShowPrivacyPolicy(false)} />}
+            <Footer info={info} />
+        </>
     );
 }
 

@@ -9,8 +9,8 @@ const NavigationContainer = () => {
   const links = [
     { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
-    { name: 'Services', path: '#services' },
-    { name: 'Pricing', path: '#pricing' },
+    // { name: 'Services', path: '#services' },
+    { name: 'Pricing', path: '#contact' },
     { name: 'Contact', path: '#contact', style: "cta" }
   ];
 

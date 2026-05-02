@@ -20,7 +20,7 @@ const Contact = () => {
                 </ul>
 
                 <br />
-                <h2>Pricing</h2>
+                <h2 id="pricing">Pricing</h2>
                 <p>£45 per hour session.</p>
                 <p>Please get in touch if this feels prohibitive as I have some reduced rate spaces.</p>
                 <p>I offer a free 30min appointment to have an initial discussion to see if we are the right fit to work effectively together.</p>

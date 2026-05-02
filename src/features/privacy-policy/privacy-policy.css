@@ -1,0 +1,32 @@
+.privacy-policy-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    overflow: auto;
+
+    .close-policy {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        /* text-decoration: underline; */
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+    }
+
+    .privacy-policy-content {
+        padding: 50px 30px;
+    }
+}

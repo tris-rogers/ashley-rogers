@@ -45,7 +45,7 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
                     </div>
                 </div>
 
-                <div className="section-elements-container">
+                <div className="section-elements-container" style={{display: "flex", justifyContent: "center", alignItems: "center", alignSelf: "baseline"}}>
                     <div className="section-element image-container">
                         <img src={imageUrl} alt="Ashley Rogers Professional Photo" loading="lazy" />
                     </div>
