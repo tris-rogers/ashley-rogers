@@ -35,6 +35,12 @@
                     &:hover {
                         box-shadow: var(--box-shadow-main);
                     }
+
+                    &:disabled {
+                        background-color: var(--color-secondary);
+                        cursor: not-allowed;
+                        box-shadow: none;
+                    }
                 }
             }
         }

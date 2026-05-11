@@ -19,9 +19,10 @@ interface FooterProps {
     developerCompany: string;
     links: FooterColumn[];
   };
+  logo: string;
 }
 
-const Footer = ({info}: FooterProps) => {
+const Footer = ({info, logo}: FooterProps) => {
     return (
         <div className="footer-container">
             <div className="links-container">
@@ -60,6 +61,10 @@ const Footer = ({info}: FooterProps) => {
             <div className="copyright-message">{info.copyrightMessage}</div>
             <div className="developer-message">
                 {info.developerMessage} <span><u>{info.developerCompany}</u></span>
+            </div>
+
+            <div className="logo-container">
+                <img src={logo} alt="BACP Logo" />
             </div>
         </div>
     );
