@@ -17,17 +17,17 @@ const PrivacyPolicy = ({close}) => {
 
                 <h2>Information We Collect</h2>
                 <p>
-                    We only collect information that you choose to provide through our contact form, which may include:
-
-                    <ul>
-                        <li>Your Name</li>
-                        <li>Email Address</li>
-                        <li>Phone Number</li>
-                        <li>The contents of your message</li>
-                    </ul>
-
-                    Please do not include sensitive information such as your date of birth, address, or any other personally identifiable information in your message.
+                    We only collect information that you choose to provide through our contact form, and limited technical data may be collected automatically, which may include:
                 </p>
+                <ul>
+                    <li>Your Name</li>
+                    <li>Email Address</li>
+                    <li>Phone Number</li>
+                    <li>The contents of your message</li>
+                    <li>We may also automatically collect limited technical information such as IP address, browser type, and access time for security, debugging, and spam prevention purposes.</li>
+                </ul>
+
+                <p>Please do not include sensitive information such as your date of birth, address, or any other personally identifiable information in your message.</p>
 
                 <h2>How We Use Your Information</h2>
                 <p>
@@ -35,17 +35,24 @@ const PrivacyPolicy = ({close}) => {
                 </p>
                 <p>
                     We use your information to:
-                    <ul>
-                        <li>Response to your enquiry</li>
-                        <li>Communicate with you about our services</li>
-                        <li>Arrange appointments or consultations where appropriate</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>Respond to your enquiry</li>
+                    <li>Communicate with you about our services</li>
+                    <li>Arrange appointments or consultations where appropriate</li>
+                </ul>
 
                 <h2>Legal Basis for Processing</h2>
                 <p>
                     We process your personal information for the purpose of responding to your enquiry and providing information about our services. This is based on our legitimate interest in communicating with prospective clients and, where applicable, taking steps at your request before entering into a service agreement.
                 </p>
+
+                <h2>Data Processors</h2>
+                <p>We use third-party service providers to operate this website, including:</p>
+                <ul>
+                    <li>IONOS (website hosting and email services)</li>
+                    <li>Cloudflare (DNS, security, and performance services)</li>
+                </ul>
 
                 <h2>How Your Information Is Stored</h2>
                 <p>
@@ -55,25 +62,25 @@ const PrivacyPolicy = ({close}) => {
 
                 <h2>Sharing Your Information</h2>
                 <p>
-                    We do not sell, rent, or share your personal information with third parties, except where necessary to operate this website (for example, website hosting or email providers) or where required by law.
+                    We do not sell, rent, or share your personal information for marketing purposes. We may share limited data with trusted service providers who help operate this website, including website hosting (IONOS) and web security and content delivery services (Cloudflare). These providers process data only as necessary to provide their services.
                 </p>
 
                 <h2>How Long We Keep Your Information</h2>
-                <p>We will only keep your personal information for as long as necessary to respond to your enquiry and maintain appropriate business records, unless a longer retention period is required by law.</p>
+                <p>Contact form submissions are typically retained for up to 12 months unless they are required for ongoing communication or legal purposes.</p>
             
                 <h2>Your Rights</h2>
                 <p>
                     You may have the right to:
-
-                    <ul>
-                        <li>Request access to the personal information we hold about you</li>
-                        <li>Request correction of inaccurate information</li>
-                        <li>Request deletion of your information where appropriate</li>
-                        <li>Object to or restrict how your information is processed</li>
-                    </ul>
-
-                    To exercise any of these rights, please get in contact with us.
                 </p>
+
+                <ul>
+                    <li>Request access to the personal information we hold about you</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Request deletion of your information where appropriate</li>
+                    <li>Object to or restrict how your information is processed</li>
+                </ul>
+
+                    <p>To exercise any of these rights, please get in contact with us.</p>
 
                 <h2>Changes to This Privacy Policy</h2>
                 <p>
