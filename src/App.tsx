@@ -6,42 +6,42 @@ import AboutContainer from './features/about/about-container';
 // import PricingContainer from './features/pricing/pricing-container';
 import ContactContainer from './features/contact/contact-container';
 import FooterContainer from './features/footer/footer-container';
-import { useState } from 'react';
-import bcrypt from "bcryptjs";
+// import { useState } from 'react';
+// import bcrypt from "bcryptjs";
 
 function App() {
-  const [password, setPassword] = useState('');
-  const [isAuth, setIsAuth] = useState(false);
+  // const [password, setPassword] = useState('');
+  // const [isAuth, setIsAuth] = useState(false);
 
-  if (!isAuth) {
-    const PASSWORD_HASH = "$2b$10$UU0zBFWXQVxBS5VSYP80OOcFgvbojQC8cOdJMnBV6dP956OgOnK/e";
-    const handlePasswordSubmit = () => {
+  // if (!isAuth) {
+  //   const PASSWORD_HASH = "$2b$10$UU0zBFWXQVxBS5VSYP80OOcFgvbojQC8cOdJMnBV6dP956OgOnK/e";
+  //   const handlePasswordSubmit = () => {
           
-      if (bcrypt.compareSync(password, PASSWORD_HASH)) {
-        setIsAuth(true);
-        alert("Access granted. Welcome!");
-      } else {
-        alert("Incorrect password. Please try again.");
-      }
+  //     if (bcrypt.compareSync(password, PASSWORD_HASH)) {
+  //       setIsAuth(true);
+  //       alert("Access granted. Welcome!");
+  //     } else {
+  //       alert("Incorrect password. Please try again.");
+  //     }
       
-    }
+  //   }
     
-    return (
-      <div className="auth-container">
-        <h2>Please enter the password to access the application:</h2>
-        <input
-          type="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-        />
-        <button
-          onClick={handlePasswordSubmit}
-        >
-          Submit
-        </button>
-      </div>
-    );
-  }
+  //   return (
+  //     <div className="auth-container">
+  //       <h2>Please enter the password to access the application:</h2>
+  //       <input
+  //         type="password"
+  //         value={password}
+  //         onChange={e => setPassword(e.target.value)}
+  //       />
+  //       <button
+  //         onClick={handlePasswordSubmit}
+  //       >
+  //         Submit
+  //       </button>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
