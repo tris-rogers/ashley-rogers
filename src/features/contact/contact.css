@@ -45,6 +45,22 @@
             }
         }
     }
+
+    .reveal-email-button {
+        padding: 3px 10px;
+        font-size: 12px;
+        background-color: var(--color-primary);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: var(--animation-main);
+        margin-left: 10px;
+
+        &:hover {
+            box-shadow: var(--box-shadow-main);
+        }
+    }
 }
 
 @media screen and (min-width: 750px) {
