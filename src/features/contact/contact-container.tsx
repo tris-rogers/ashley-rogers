@@ -1,6 +1,14 @@
 import { useState, type FormEvent } from "react";
 import Contact from "./contact";
 
+const EmailLink = ({email}:{email: string}) => {
+    return (
+        <a href={`mailto:${email}`} style={{color: "blue", textDecoration: "underline"}}>
+            {email}
+        </a>
+    );
+}
+
 const EmailButton = () => {
     const [revealedEmail, setRevealedEmail] = useState("");
     const [fetching, setFetching] = useState(false);
@@ -47,12 +55,57 @@ const EmailButton = () => {
     )
 }
 
-const EmailLink = ({email}:{email: string}) => {
+const MobileLink = ({mobile}:{mobile: string}) => {
     return (
-        <a href={`mailto:${email}`} style={{color: "blue", textDecoration: "underline"}}>
-            {email}
+        <a href={`tel:${mobile}`} style={{color: "blue", textDecoration: "underline"}}>
+            {mobile}
         </a>
     );
+}
+const MobileButton = () => {
+    const [revealedMobile, setRevealedMobile] = useState("");
+    const [fetching, setFetching] = useState(false);
+    const fetchMobile = async () => {
+        setFetching(true);
+
+        try {
+            const response = await fetch("/revealMobile.php", {
+                method: "POST",
+                headers: {"Content-Type": "application/x-www-form-urlencoded"}
+            });
+
+            const email = await response.text();
+
+            if (!response.ok) {
+                throw new Error(email);
+            }
+            setRevealedMobile(email);
+
+            setFetching(false);
+        } catch (error) {
+            setFetching(false);
+            setRevealedMobile("");
+            
+            if (error instanceof Error && !!error?.message) {
+                alert(error.message);
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        }
+    }
+
+    if (!!revealedMobile) {
+        return <MobileLink mobile={revealedMobile} />;
+    }
+
+    return (
+        <button 
+            className="reveal-mobile-button"
+            onClick={fetchMobile}
+        >
+            {fetching ? <i className="fas fa-spinner fa-spin"></i> : "Reveal Mobile"}
+        </button>
+    )
 }
 
 const ContactContainer = () => {
@@ -110,6 +163,7 @@ const ContactContainer = () => {
             setters={{ setName, setEmail, setPhone, setMessage }} 
             canSubmit={Boolean(name.trim() && email.trim() && message.trim() && isValidEmail(email))}
             emailComponent={<EmailButton />}
+            mobileComponent={<MobileButton />}
         />
     )
 }

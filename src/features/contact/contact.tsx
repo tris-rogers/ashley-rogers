@@ -21,9 +21,10 @@ interface ContactProps {
 
     canSubmit: boolean;
     emailComponent: React.ReactNode;
+    mobileComponent: React.ReactNode;
 }
 
-const Contact = ({handleSubmit, data, setters, canSubmit, emailComponent}: ContactProps) => {
+const Contact = ({handleSubmit, data, setters, canSubmit, emailComponent, mobileComponent}: ContactProps) => {
     const { name, email, phone, message } = data;
     const { setName, setEmail, setPhone, setMessage } = setters;
 
@@ -40,8 +41,10 @@ const Contact = ({handleSubmit, data, setters, canSubmit, emailComponent}: Conta
                 </p>
                 <p>You can contact me by:</p>
                 <ul>
-                    <li>Email: {emailComponent}</li>
-                    {/* <li>Phone</li> */}
+                    <li><span>Phone:</span> {mobileComponent}</li>
+
+                    <li><span>Email:</span> {emailComponent}</li>
+                    
                     <li>Contact Form Below</li>
                 </ul>
 
