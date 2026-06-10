@@ -1,4 +1,5 @@
 import DropdownContainer from "../../components/dropdown/dropdown-container";
+import TestimonialsContainer from "../../components/testimonial/testimonials-container";
 
 import "./about.css";
 
@@ -143,7 +144,11 @@ const About = ({ qualificationsArr }: AboutProps) => {
                                 }
                     />
                 </div>
+                <div className="testimonial-container section-element" style={{marginTop: "50px"}}>
+                    <TestimonialsContainer />
+                </div>
             </div>
+            
         </>
     )
 }

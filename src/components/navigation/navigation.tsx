@@ -1,5 +1,7 @@
 import "./navigation.css";
 
+import companyLogo from "../../assets/images/company-logo.png";
+
 type NavigationProps = {
     links: { name: string; path: string, style?: string }[];
     selectedLink: string;
@@ -9,6 +11,7 @@ type NavigationProps = {
 const Navigation = ({ links, selectedLink, setSelectedLink }: NavigationProps) => {
     return <div className="navigation-container large-screen">
         <div className="navigation-header">
+            <img src={companyLogo} alt="Company Logo" className="company-logo" />
             <div className="name-title">Ashley Rogers</div>
         </div>
 

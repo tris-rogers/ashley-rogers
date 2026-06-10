@@ -1,0 +1,23 @@
+.testimonials-container {
+    position: relative;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-neutral);
+    border-radius: 6px;
+    padding: 20px;
+
+    .left-quote {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .right-quote {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    p {
+        padding: 0 20px;
+    }
+}

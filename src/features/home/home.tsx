@@ -45,7 +45,7 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
                     </div>
                 </div>
 
-                <div className="section-elements-container" style={{display: "flex", justifyContent: "center", alignItems: "center", alignSelf: "baseline"}}>
+                <div className="section-elements-container" style={{ display: "flex", justifyContent: "center", alignItems: "center", alignSelf: "baseline" }}>
                     <div className="section-element image-container">
                         <img src={imageUrl} alt="Ashley Rogers Professional Photo" loading="lazy" />
                     </div>
@@ -53,8 +53,8 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
             </div>
         </div>
 
-        <div className="section-container" style={{flexDirection: "column", alignItems: "center"}}>
-            <div className="sections" style={{width: "100%"}}>
+        <div className="section-container" style={{ flexDirection: "column", alignItems: "center" }}>
+            <div className="sections" style={{ width: "100%" }}>
                 <DropdownContainer
                     title={"How Counselling May Help"}
                     content={
@@ -91,7 +91,7 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
                 />
             </div>
 
-            <div className="sections" style={{width: "100%", marginTop: "50px"}}>
+            <div className="sections" style={{ width: "100%", marginTop: "50px" }}>
                 <DropdownContainer
                     title={"My Approach to Counselling"}
                     content={
@@ -121,14 +121,40 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
                 />
             </div>
 
-            <div className="sections" style={{width: "100%", marginTop: "50px"}}>
+            <div className="sections" style={{ width: "100%", marginTop: "50px" }}>
                 <DropdownContainer
                     title={"Experience and Professional Background"}
                     content={
                         <div>
                             <p>
-                                I have spent many years working in specialist support services including <strong>domestic abuse services,
-                                substance misuse support and crisis helplines</strong>.
+                                I have spent many years working within specialist support services, with a particular focus on domestic abuse and trauma. Throughout my career, I have supported individuals who have experienced coercive control, emotional, physical and sexual abuse, as well as the lasting impact that traumatic experiences can have on wellbeing, relationships, identity and self-esteem.
+                            </p>
+
+                            <p>
+                                Alongside my work in domestic abuse services, I have also worked within substance misuse support and crisis helplines, supporting people experiencing trauma, grief, life transitions, emotional distress, and periods of significant crisis. These roles have given me extensive experience working with complex and sensitive situations, while developing a strong understanding of safeguarding, risk assessment, and trauma-informed practice.
+                            </p>
+
+                            <p>
+                                I hold an Advanced Diploma in Integrative Counselling and am a registered member of the BACP, working in accordance with the BACP Ethical Framework. Confidentiality, professional integrity, and reflective practice are at the heart of my practice.
+                            </p>
+                            <p>
+                                I am committed to ongoing professional development and have completed additional training in:
+                            </p>
+                            <ul>
+                                <li>SafeLives Level 3 Certificate in Domestic Abuse Prevention (IDVA)</li>
+                                <li>IRIS Train the Trainer Programme</li>
+                                <li>Trauma-Informed Practice</li>
+                                <li>Power Threat Meaning Framework</li>
+                                <li>Trauma Stabilisation</li>
+                                <li>Suicide Awareness and Prevention</li>
+                                <li>Sexual Assault Referral Centre (SARC) Awareness</li>
+                                <li>LGBTQ+ Awareness and Inclusive Practice</li>
+                                <li>Equality, Diversity and Inclusion</li>
+                            </ul>
+                            {/*  */}
+                            {/* <p>
+                                I have spent many years working in specialist support services including
+                                <strong>domestic abuse services, substance misuse support and crisis helplines</strong>.
                             </p>
                             <p>
                                 Through this work I have supported people experiencing trauma, grief, identity change, crisis and
@@ -146,13 +172,13 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
                                 Confidentiality, professional integrity and reflective practice are central to the way I work.
                                 I offer <strong>online counselling</strong>, providing flexibility while maintaining a safe and confidential therapeutic
                                 space.
-                            </p>
+                            </p> */}
                         </div>
                     }
                 />
             </div>
 
-            <div className="sections" style={{width: "100%", marginTop: "50px"}}>
+            <div className="sections" style={{ width: "100%", marginTop: "50px" }}>
                 <DropdownContainer
                     title={"Taking the First Step"}
                     content={
@@ -165,7 +191,7 @@ const Home = ({ buttons, imageUrl }: HomeProps) => (
                                 If you would like to contact me, we can begin with an initial free 30 min conversation to talk about what
                                 has brought you to counselling and whether working together feels right for you.
                             </p>
-                            
+
                         </div>
                     }
                 />

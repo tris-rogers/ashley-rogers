@@ -1,4 +1,5 @@
 import { useState } from "react";
+import companyLogo from "../../assets/images/company-logo.png";
 import "./navigation.css";
 
 type NavigationHeaderProps = {
@@ -7,6 +8,7 @@ type NavigationHeaderProps = {
 
 const NavigationHeader = ({ actionBtn }: NavigationHeaderProps) => (
     <div className="navigation-header">
+        <img src={companyLogo} alt="Company Logo" className="company-logo" />
         <div className="name-title">Ashley Rogers</div>
         {actionBtn}
     </div>

@@ -19,7 +19,7 @@ interface FooterProps {
     developerCompany: string;
     links: FooterColumn[];
   };
-  logo: string;
+  logo: string[];
 }
 
 const Footer = ({info, logo}: FooterProps) => {
@@ -64,7 +64,11 @@ const Footer = ({info, logo}: FooterProps) => {
             </div>
 
             <div className="logo-container">
-                <img src={logo} alt="BACP Logo" />
+                {
+                    logo.map((logoSrc, index) => (
+                        <img key={index} src={logoSrc} alt="Logo" />
+                    ))
+                }
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import bacLogo from "../../assets/images/BACP-Logo.png";
+import companyLogo from "../../assets/images/company-logo.png";
 
 import { useState } from "react";
 
@@ -38,7 +39,7 @@ const FooterContainer = () => {
     return (
         <>
             {showPrivacyPolicy && <PrivacyPolicy close={()=>setShowPrivacyPolicy(false)} />}
-            <Footer info={info} logo={bacLogo} />
+            <Footer info={info} logo={[bacLogo, companyLogo]} />
         </>
     );
 }
